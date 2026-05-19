@@ -1,7 +1,7 @@
 .marquee {
   background: var(--black-soft);
-  border-top: 1px solid rgba(220, 220, 212, 0.06);
-  border-bottom: 1px solid rgba(220, 220, 212, 0.06);
+  border-top: 1px solid rgba(243, 230, 207, 0.06);
+  border-bottom: 1px solid rgba(243, 230, 207, 0.06);
   overflow: hidden;
   padding: 1.4rem 0;
 }

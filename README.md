@@ -74,12 +74,14 @@ Tudo controlado por **variáveis CSS** em `src/styles/global.css`.
 
 | Variável         | Cor       | Onde se usa                                |
 |------------------|-----------|--------------------------------------------|
-| `--black`        | `#0a0a0a` | Fundo principal                            |
-| `--paper`        | `#dcdcd4` | Texto, cartões                             |
-| `--leaf`         | `#3b7a2f` | Verde do logo, botões primários            |
-| `--leaf-bright`  | `#4a9a3a` | Acentos, hover, eyebrow                    |
-| `--tomato`       | `#c8341c` | Acento quente, "encerrado"                 |
-| `--gold`         | `#d4a04a` | Estrelas, "popular"                        |
+| `--black`        | `#1a0f0a` | Fundo principal (castanho-brasa)           |
+| `--paper`        | `#f3e6cf` | Pergaminho — cartões claros                |
+| `--cream`        | `#f7eed8` | Texto sobre tomate                         |
+| `--tomato`       | `#c8341c` | Acento principal, botões, hover            |
+| `--tomato-deep`  | `#8a1f0f` | Sombras duras, preços, divisores           |
+| `--ember`        | `#f06c2e` | Brasa, faíscas, scripts                    |
+| `--gold`         | `#d4a04a` | Eyebrows, estrelas, tape decorativa        |
+| `--leaf`         | `#3f5c2a` | Verde do logo (acento secundário)          |
 
 ### Tipografia
 

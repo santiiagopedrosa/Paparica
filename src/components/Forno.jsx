@@ -23,13 +23,13 @@ export default function Forno() {
                 <stop offset="100%" stopColor="#3b0a02" />
               </radialGradient>
               <radialGradient id="brick" cx="50%" cy="40%" r="70%">
-                <stop offset="0%" stopColor="#3a3a36" />
-                <stop offset="100%" stopColor="#1a1a18" />
+                <stop offset="0%" stopColor="#7a3a1c" />
+                <stop offset="100%" stopColor="#3b1b08" />
               </radialGradient>
             </defs>
 
-            <rect x="50" y="370" width="400" height="100" fill="#0a0a0a" />
-            <rect x="50" y="370" width="400" height="14" fill="#000" />
+            <rect x="50" y="370" width="400" height="100" fill="#241710" />
+            <rect x="50" y="370" width="400" height="14" fill="#1a0f0a" />
 
             <path d="M80,370 C80,180 420,180 420,370 Z" fill="url(#brick)" />
 
@@ -48,8 +48,8 @@ export default function Forno() {
                     y={y}
                     width="32"
                     height="18"
-                    fill="#2a2a26"
-                    stroke="#0e0e0c"
+                    fill="#6b2f15"
+                    stroke="#3b1b08"
                     strokeWidth="1"
                     opacity={0.85 - row * 0.04}
                     transform={`rotate(${(ang * 180) / Math.PI + 90} ${x + 16} ${y + 9})`}
@@ -58,7 +58,7 @@ export default function Forno() {
               })
             )}
 
-            <path d="M180,370 C180,250 320,250 320,370 Z" fill="#000" />
+            <path d="M180,370 C180,250 320,250 320,370 Z" fill="#0a0402" />
 
             <ellipse cx="250" cy="340" rx="70" ry="40" fill="url(#firepit)" className="leaf-sway" />
             <ellipse cx="250" cy="330" rx="40" ry="50" fill="#ffd56b" opacity=".75" className="leaf-sway" style={{ animationDelay: '.3s' }} />

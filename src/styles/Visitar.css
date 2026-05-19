@@ -15,7 +15,7 @@
   content: '';
   width: 28px;
   height: 1px;
-  background: var(--leaf-bright);
+  background: var(--gold);
 }
 
 .visitar__title { margin-top: 1rem; }
@@ -31,7 +31,7 @@
   color: var(--black);
   padding: 2.5rem 2rem;
   border-radius: 4px;
-  box-shadow: 10px 10px 0 var(--leaf-deep);
+  box-shadow: 10px 10px 0 var(--tomato-deep);
   position: relative;
 }
 
@@ -40,7 +40,7 @@
   font-size: 0.65rem;
   letter-spacing: 0.35em;
   text-transform: uppercase;
-  color: var(--leaf-deep);
+  color: var(--tomato-deep);
   margin-bottom: 0.8rem;
 }
 
@@ -67,7 +67,7 @@
 }
 
 .visitar__icon {
-  color: var(--leaf-deep);
+  color: var(--tomato-deep);
   margin-top: 0.3rem;
   flex-shrink: 0;
 }
@@ -77,7 +77,7 @@
   font-size: 0.7rem;
   letter-spacing: 0.25em;
   text-transform: uppercase;
-  color: var(--leaf-deep);
+  color: var(--tomato-deep);
   margin-bottom: 0.3rem;
 }
 
@@ -85,7 +85,7 @@
   font-family: var(--font-display);
   font-style: italic;
   font-size: 1.1rem;
-  color: #333;
+  color: #4a2f1f;
   line-height: 1.4;
 }
 
@@ -93,7 +93,7 @@
 
 .visitar__divider {
   border: 0;
-  border-top: 1.5px dashed rgba(0, 0, 0, 0.18);
+  border-top: 1.5px dashed rgba(74, 47, 31, 0.3);
 }
 
 .visitar__hours {
@@ -115,12 +115,12 @@
   font-style: italic;
   width: 6rem;
   flex-shrink: 0;
-  color: #555;
+  color: #6a4a35;
 }
 
 .visitar__hour-dots {
   flex: 1;
-  border-bottom: 1.5px dotted rgba(0, 0, 0, 0.2);
+  border-bottom: 1.5px dotted rgba(74, 47, 31, 0.3);
   margin: 0 0.5rem 0.3rem;
 }
 
@@ -147,7 +147,7 @@
   min-height: 460px;
   overflow: hidden;
   border-radius: 4px;
-  border: 1.5px solid var(--leaf-deep);
+  border: 1.5px solid var(--tomato-deep);
   background: var(--black-soft);
 }
 
@@ -163,8 +163,8 @@
   position: absolute;
   top: 1rem;
   left: 1rem;
-  background: var(--leaf);
-  color: var(--paper);
+  background: var(--tomato);
+  color: var(--cream);
   font-family: var(--font-script);
   font-size: 1.4rem;
   padding: 0.3rem 1.2rem;

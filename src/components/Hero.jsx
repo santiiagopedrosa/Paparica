@@ -6,6 +6,29 @@ import '../styles/Hero.css';
 export default function Hero() {
   return (
     <section id="top" className="hero grain">
+      {/* Faíscas de brasa */}
+      <div className="hero__sparks" aria-hidden="true">
+        {Array.from({ length: 22 }).map((_, i) => {
+          const left = (i * 53) % 100;
+          const delay = (i * 0.4) % 6;
+          const size = 2 + (i % 4);
+          return (
+            <span
+              key={i}
+              className="hero__spark"
+              style={{
+                left: `${left}%`,
+                bottom: `${5 + (i % 30)}%`,
+                width: size,
+                height: size,
+                animationDuration: `${4 + (i % 4)}s`,
+                animationDelay: `${delay}s`,
+              }}
+            />
+          );
+        })}
+      </div>
+
       {/* Folhas decorativas a flutuar */}
       <div className="hero__leaves" aria-hidden="true">
         <div className="hero__leaf hero__leaf--1 leaf-sway"><LeafMark size={70} /></div>
@@ -13,7 +36,7 @@ export default function Hero() {
         <div className="hero__leaf hero__leaf--3 leaf-sway" style={{ animationDelay: '2.3s' }}><LeafMark size={56} /></div>
       </div>
 
-      {/* Halo verde difuso */}
+      {/* Halo de fogo difuso */}
       <div className="hero__halo" aria-hidden="true" />
 
       <div className="hero__inner container">
@@ -69,7 +92,7 @@ export default function Hero() {
                   d="M 250,250 m -220,0 a 220,220 0 1,1 440,0 a 220,220 0 1,1 -440,0"
                 />
               </defs>
-              <text fill="var(--leaf-bright)" fontFamily="DM Mono" fontSize="14" letterSpacing="6">
+              <text fill="var(--gold)" fontFamily="DM Mono" fontSize="14" letterSpacing="6">
                 <textPath href="#ring-path">
                   FORNO A LENHA · MASSA MADRE · INGREDIENTES FRESCOS · FEITO À MÃO · DESDE SEMPRE ·
                 </textPath>

@@ -18,7 +18,7 @@
   padding: 3rem 2.5rem;
   border-radius: 2px;
   box-shadow:
-    14px 14px 0 var(--leaf-deep),
+    14px 14px 0 var(--tomato-deep),
     16px 16px 40px rgba(0, 0, 0, 0.5);
   overflow: hidden;
 }
@@ -38,7 +38,7 @@
   font-size: 0.65rem;
   letter-spacing: 0.4em;
   text-transform: uppercase;
-  color: var(--leaf-deep);
+  color: var(--tomato-deep);
   margin-bottom: 1rem;
 }
 
@@ -53,7 +53,7 @@
 }
 
 .historia__card-leaf {
-  color: var(--leaf);
+  color: var(--tomato-deep);
   font-style: italic;
   position: relative;
 }
@@ -63,14 +63,14 @@
   font-style: italic;
   font-size: 1.15rem;
   line-height: 1.55;
-  color: #2a2a2a;
+  color: #4a2f1f;
 }
 
 .historia__card-sign {
   margin-top: 2rem;
   font-family: var(--font-script);
   font-size: 1.8rem;
-  color: var(--leaf-deep);
+  color: var(--tomato-deep);
 }
 
 .historia__card-leafDecor {
@@ -98,7 +98,7 @@
 
 .historia__stat {
   padding-left: 1.5rem;
-  border-left: 2px solid var(--leaf);
+  border-left: 2px solid var(--tomato);
 }
 
 .historia__stat-num {
@@ -114,13 +114,13 @@
   font-family: var(--font-display);
   font-style: italic;
   font-size: 1.15rem;
-  color: var(--leaf-bright);
+  color: var(--ember);
   margin: 0.4rem 0 0.7rem;
 }
 
 .historia__stat-text {
   font-size: 0.92rem;
-  color: rgba(220, 220, 212, 0.65);
+  color: rgba(243, 230, 207, 0.65);
   line-height: 1.6;
 }
 

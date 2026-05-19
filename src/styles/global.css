@@ -1,32 +1,36 @@
 /* ============================================
    PAPARICA · Design System
-   Paleta inspirada no logótipo: preto profundo,
-   cinza-papel, verde-folha. Acentos: tomate + dourado.
+   Paleta quente rústica: castanho-brasa, tomate,
+   dourado, papel pergaminho. Verde-folha (do logo)
+   mantido como acento secundário.
    ============================================ */
 
 :root {
-  /* Core */
-  --black: #0a0a0a;
-  --black-soft: #141414;
-  --black-card: #1c1c1c;
+  /* Core — castanhos quentes (do primeiro HTML) */
+  --black: #1a0f0a;
+  --black-soft: #241710;
+  --black-card: #2a1810;
+  --char: #0d0805;
 
-  /* Paper grays from logo */
-  --paper: #dcdcd4;
-  --paper-soft: #c5c5bd;
-  --paper-dim: #8a8a82;
+  /* Paper — pergaminho quente */
+  --paper: #f3e6cf;
+  --paper-soft: #e8d6b6;
+  --paper-dim: #b8a07a;
+  --cream: #f7eed8;
 
-  /* Leaf greens from logo */
-  --leaf: #3b7a2f;
-  --leaf-bright: #4a9a3a;
-  --leaf-deep: #2a5a22;
-  --leaf-stem: #1e3f18;
-
-  /* Pizza-warm accents */
+  /* Acentos quentes — fogo */
   --tomato: #c8341c;
   --tomato-deep: #8a1f0f;
-  --ember: #e87a3e;
+  --ember: #f06c2e;
   --gold: #d4a04a;
+  --gold-deep: #a87726;
   --crust: #8b5a2b;
+
+  /* Verde-folha (do logo) — acento secundário */
+  --leaf: #3f5c2a;
+  --leaf-bright: #6b8a4e;
+  --leaf-deep: #2a3f1a;
+  --leaf-stem: #1e2f12;
 
   /* Type */
   --font-display: 'Fraunces', 'Times New Roman', serif;
@@ -57,8 +61,8 @@ body {
 }
 
 ::selection {
-  background: var(--leaf);
-  color: var(--paper);
+  background: var(--tomato);
+  color: var(--cream);
 }
 
 ::-webkit-scrollbar {
@@ -68,11 +72,11 @@ body {
   background: var(--black);
 }
 ::-webkit-scrollbar-thumb {
-  background: var(--leaf-deep);
+  background: var(--tomato-deep);
   border-radius: 8px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--leaf);
+  background: var(--tomato);
 }
 
 a {
@@ -120,7 +124,7 @@ button {
   font-size: 0.7rem;
   letter-spacing: 0.4em;
   text-transform: uppercase;
-  color: var(--leaf-bright);
+  color: var(--gold);
   display: inline-flex;
   align-items: center;
   gap: 0.7rem;
@@ -131,7 +135,7 @@ button {
   content: '';
   width: 28px;
   height: 1px;
-  background: var(--leaf-bright);
+  background: var(--gold);
 }
 
 /* Big section title */
@@ -147,7 +151,7 @@ button {
 .section-title em {
   font-style: italic;
   font-weight: 400;
-  color: var(--leaf-bright);
+  color: var(--tomato);
 }
 
 /* Buttons */
@@ -167,25 +171,25 @@ button {
 }
 
 .btn-primary {
-  background: var(--leaf);
-  color: var(--paper);
-  border: 1.5px solid var(--leaf);
+  background: var(--tomato);
+  color: var(--cream);
+  border: 1.5px solid var(--tomato);
 }
 .btn-primary:hover {
-  background: var(--leaf-bright);
-  border-color: var(--leaf-bright);
+  background: var(--ember);
+  border-color: var(--ember);
   transform: translateY(-2px);
-  box-shadow: 0 10px 30px -10px rgba(74, 154, 58, 0.5);
+  box-shadow: 0 10px 30px -10px rgba(240, 108, 46, 0.5);
 }
 
 .btn-ghost {
   background: transparent;
   color: var(--paper);
-  border: 1.5px solid rgba(220, 220, 212, 0.3);
+  border: 1.5px solid rgba(243, 230, 207, 0.3);
 }
 .btn-ghost:hover {
   border-color: var(--paper);
-  background: rgba(220, 220, 212, 0.05);
+  background: rgba(243, 230, 207, 0.05);
 }
 
 .btn-tomato {

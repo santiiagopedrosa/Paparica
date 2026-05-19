@@ -3,7 +3,7 @@
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background: radial-gradient(ellipse at top, #161616 0%, var(--black) 70%);
+  background: radial-gradient(ellipse at top, #2a1810 0%, var(--black) 70%);
   padding-top: 6rem;
   padding-bottom: 4rem;
   overflow: hidden;
@@ -15,7 +15,7 @@
   height: 800px;
   right: -200px;
   top: -200px;
-  background: radial-gradient(circle, rgba(74, 154, 58, 0.18), transparent 60%);
+  background: radial-gradient(circle, rgba(240, 108, 46, 0.18), transparent 60%);
   filter: blur(40px);
   pointer-events: none;
 }
@@ -28,11 +28,34 @@
 }
 .hero__leaf {
   position: absolute;
-  opacity: 0.5;
+  opacity: 0.3;
 }
 .hero__leaf--1 { top: 18%; left: 6%; }
-.hero__leaf--2 { bottom: 22%; left: 14%; opacity: 0.35; }
-.hero__leaf--3 { top: 40%; right: 8%; opacity: 0.25; }
+.hero__leaf--2 { bottom: 22%; left: 14%; opacity: 0.22; }
+.hero__leaf--3 { top: 40%; right: 8%; opacity: 0.18; }
+
+/* Faíscas de brasa a subir */
+.hero__sparks {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+.hero__spark {
+  position: absolute;
+  border-radius: 50%;
+  background: radial-gradient(circle, #ffb558, var(--tomato) 60%, transparent);
+  box-shadow: 0 0 8px var(--ember);
+  opacity: 0.9;
+  animation-name: spark-rise;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+}
+
+@keyframes spark-rise {
+  0% { transform: translateY(0) scale(1); opacity: 1; }
+  100% { transform: translateY(-140px) scale(0.2); opacity: 0; }
+}
 
 .hero__inner {
   display: grid;
@@ -59,7 +82,7 @@
   display: block;
   font-family: var(--font-script);
   font-size: 0.36em;
-  color: var(--leaf-bright);
+  color: var(--ember);
   font-weight: 400;
   letter-spacing: 0;
   margin-bottom: 0.4rem;
@@ -78,7 +101,7 @@
 
 .hero__title-leaf {
   position: relative;
-  color: var(--leaf-bright);
+  color: var(--tomato);
   font-style: italic;
 }
 .hero__title-leaf::after {
@@ -88,7 +111,7 @@
   right: -0.05em;
   bottom: 0.05em;
   height: 0.18em;
-  background: rgba(74, 154, 58, 0.22);
+  background: rgba(200, 52, 28, 0.22);
   z-index: -1;
   border-radius: 4px;
 }
@@ -97,7 +120,7 @@
   margin-top: 1.8rem;
   font-size: 1.1rem;
   line-height: 1.7;
-  color: rgba(220, 220, 212, 0.75);
+  color: rgba(243, 230, 207, 0.78);
   max-width: 30em;
   font-family: var(--font-display);
   font-weight: 400;
@@ -139,7 +162,7 @@
 .hero__divider {
   width: 1px;
   height: 22px;
-  background: rgba(220, 220, 212, 0.18);
+  background: rgba(243, 230, 207, 0.18);
 }
 
 .hero__price {
@@ -178,8 +201,8 @@
   overflow: hidden;
   box-shadow:
     0 30px 80px -20px rgba(0, 0, 0, 0.8),
-    0 0 0 1px rgba(74, 154, 58, 0.15),
-    inset 0 0 0 6px rgba(20, 20, 20, 0.4);
+    0 0 0 1px rgba(212, 160, 74, 0.25),
+    inset 0 0 0 6px rgba(26, 15, 10, 0.4);
   background: var(--black-soft);
 }
 
@@ -194,14 +217,14 @@
   position: absolute;
   bottom: 8%;
   right: -10px;
-  background: var(--leaf);
-  color: var(--paper);
+  background: var(--tomato);
+  color: var(--cream);
   font-family: var(--font-script);
   font-size: 1.6rem;
   padding: 0.4rem 1.5rem;
   transform: rotate(-8deg);
   box-shadow: 0 8px 20px -6px rgba(0, 0, 0, 0.5);
-  border: 1.5px solid var(--leaf-bright);
+  border: 1.5px solid var(--ember);
 }
 
 .hero__scroll {

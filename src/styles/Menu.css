@@ -17,7 +17,7 @@
 .menu__quote {
   font-family: var(--font-display);
   font-style: italic;
-  color: var(--leaf-bright);
+  color: var(--ember);
   font-size: 1.05rem;
   max-width: 30em;
   line-height: 1.5;
@@ -37,17 +37,17 @@
   letter-spacing: 0.18em;
   text-transform: uppercase;
   padding: 0.85rem 1.5rem;
-  border: 1.5px solid rgba(220, 220, 212, 0.18);
+  border: 1.5px solid rgba(243, 230, 207, 0.18);
   border-radius: 999px;
   color: var(--paper);
   transition: all 0.3s ease;
   background: transparent;
 }
-.menu__tab:hover { border-color: var(--leaf-bright); color: var(--leaf-bright); }
+.menu__tab:hover { border-color: var(--ember); color: var(--ember); }
 .menu__tab--active {
-  background: var(--leaf);
-  border-color: var(--leaf);
-  color: var(--paper);
+  background: var(--tomato);
+  border-color: var(--tomato);
+  color: var(--cream);
 }
 
 .menu__sheet {
@@ -90,7 +90,7 @@
   font-size: 0.7rem;
   letter-spacing: 0.4em;
   text-transform: uppercase;
-  color: var(--leaf-deep);
+  color: var(--tomato-deep);
   margin-bottom: 0.6rem;
 }
 
@@ -98,12 +98,12 @@
   font-family: var(--font-display);
   font-style: italic;
   font-size: 1.2rem;
-  color: #444;
+  color: var(--ink-soft, #4a2f1f);
 }
 
 .menu__divider {
   border: 0;
-  border-top: 1.5px dashed rgba(0, 0, 0, 0.18);
+  border-top: 1.5px dashed rgba(74, 47, 31, 0.3);
   margin: 1.5rem 0 2rem;
 }
 
@@ -128,11 +128,11 @@
   gap: 0.5rem;
 }
 
-.menu__item-star { color: var(--gold); }
+.menu__item-star { color: var(--gold-deep); }
 
 .menu__item-leader {
   flex: 1;
-  border-bottom: 2px dotted rgba(0, 0, 0, 0.18);
+  border-bottom: 2px dotted rgba(74, 47, 31, 0.3);
   margin: 0 0.6rem 0.4rem;
   min-width: 1rem;
 }
@@ -141,7 +141,7 @@
   font-family: var(--font-display);
   font-weight: 600;
   font-size: 1.3rem;
-  color: var(--leaf-deep);
+  color: var(--tomato-deep);
   letter-spacing: -0.01em;
 }
 
@@ -149,7 +149,7 @@
   font-family: var(--font-display);
   font-style: italic;
   font-size: 0.98rem;
-  color: #555;
+  color: #6a4a35;
   margin-top: 0.2rem;
   line-height: 1.5;
 }
@@ -167,8 +167,8 @@
   letter-spacing: 0.22em;
   text-transform: uppercase;
   padding: 0.25rem 0.6rem;
-  background: rgba(59, 122, 47, 0.12);
-  color: var(--leaf-deep);
+  background: rgba(200, 52, 28, 0.12);
+  color: var(--tomato-deep);
   border-radius: 999px;
 }
 
@@ -179,7 +179,7 @@
 
 .menu__sheet-bb {
   font-size: 2rem;
-  color: var(--leaf-deep);
+  color: var(--tomato-deep);
 }
 
 .menu__note {
@@ -187,7 +187,7 @@
   margin-top: 2rem;
   font-family: var(--font-display);
   font-style: italic;
-  color: rgba(220, 220, 212, 0.45);
+  color: rgba(243, 230, 207, 0.45);
   font-size: 0.9rem;
 }
 

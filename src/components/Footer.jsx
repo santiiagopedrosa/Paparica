@@ -59,7 +59,7 @@ export default function Footer() {
 
         <div className="footer__bottom">
           <div>© {new Date().getFullYear()} Paparica · Todos os direitos reservados</div>
-          <div>Feito com <span style={{ color: 'var(--leaf-bright)' }}>♥</span> em Monte Real</div>
+          <div>Feito com <span style={{ color: 'var(--tomato)' }}>♥</span> em Monte Real</div>
         </div>
       </div>
     </footer>
