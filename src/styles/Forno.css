@@ -1,0 +1,100 @@
+.forno {
+  position: relative;
+  padding: 7rem 0;
+  background: linear-gradient(180deg, var(--black) 0%, #161616 100%);
+  overflow: hidden;
+}
+
+.forno__bigNum {
+  position: absolute;
+  top: -2rem;
+  left: -1rem;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 28vw;
+  color: var(--leaf-deep);
+  opacity: 0.08;
+  line-height: 1;
+  pointer-events: none;
+  letter-spacing: -0.05em;
+}
+
+.forno__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.forno__visual {
+  display: flex;
+  justify-content: center;
+}
+
+.forno__svg {
+  width: 100%;
+  max-width: 520px;
+  filter: drop-shadow(0 40px 60px rgba(0, 0, 0, 0.5));
+}
+
+.forno__title { margin-top: 1rem; }
+.forno__title em { color: var(--ember); }
+
+.forno__lead {
+  margin: 1.6rem 0 2.4rem;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1.1rem;
+  color: rgba(220, 220, 212, 0.75);
+  line-height: 1.6;
+  max-width: 32em;
+}
+
+.forno__lead em {
+  color: var(--ember);
+  font-style: italic;
+}
+
+.forno__steps {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+}
+
+.forno__step {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.2rem;
+}
+
+.forno__step-num {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 2.4rem;
+  color: var(--leaf-bright);
+  line-height: 1;
+  flex-shrink: 0;
+  width: 2.6rem;
+  letter-spacing: -0.02em;
+}
+
+.forno__step-title {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  letter-spacing: -0.005em;
+  color: var(--paper);
+  margin-bottom: 0.3rem;
+}
+
+.forno__step-text {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 0.95rem;
+  color: rgba(220, 220, 212, 0.6);
+}
+
+@media (min-width: 900px) {
+  .forno__grid { grid-template-columns: 1fr 1fr; gap: 5rem; }
+}

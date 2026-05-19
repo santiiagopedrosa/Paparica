@@ -1,0 +1,133 @@
+.historia {
+  padding: 7rem 0;
+  position: relative;
+  background: var(--black);
+}
+
+.historia__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.historia__card {
+  position: relative;
+  background: var(--paper);
+  color: var(--black);
+  padding: 3rem 2.5rem;
+  border-radius: 2px;
+  box-shadow:
+    14px 14px 0 var(--leaf-deep),
+    16px 16px 40px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+.historia__card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  opacity: 0.08;
+  mix-blend-mode: multiply;
+  pointer-events: none;
+}
+
+.historia__card-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  color: var(--leaf-deep);
+  margin-bottom: 1rem;
+}
+
+.historia__card-title {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: clamp(2.2rem, 5vw, 3.4rem);
+  line-height: 0.95;
+  letter-spacing: -0.02em;
+  color: var(--black);
+  margin-bottom: 1.6rem;
+}
+
+.historia__card-leaf {
+  color: var(--leaf);
+  font-style: italic;
+  position: relative;
+}
+
+.historia__card-text {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1.15rem;
+  line-height: 1.55;
+  color: #2a2a2a;
+}
+
+.historia__card-sign {
+  margin-top: 2rem;
+  font-family: var(--font-script);
+  font-size: 1.8rem;
+  color: var(--leaf-deep);
+}
+
+.historia__card-leafDecor {
+  position: absolute;
+  bottom: -10px;
+  right: 20px;
+  opacity: 0.5;
+  transform: rotate(15deg);
+}
+
+.historia__content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.historia__title { margin-top: 0.5rem; }
+
+.historia__stats {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+}
+
+.historia__stat {
+  padding-left: 1.5rem;
+  border-left: 2px solid var(--leaf);
+}
+
+.historia__stat-num {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 3.2rem;
+  line-height: 1;
+  color: var(--paper);
+  letter-spacing: -0.02em;
+}
+
+.historia__stat-title {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1.15rem;
+  color: var(--leaf-bright);
+  margin: 0.4rem 0 0.7rem;
+}
+
+.historia__stat-text {
+  font-size: 0.92rem;
+  color: rgba(220, 220, 212, 0.65);
+  line-height: 1.6;
+}
+
+@media (min-width: 900px) {
+  .historia__grid {
+    grid-template-columns: 5fr 7fr;
+    gap: 5rem;
+  }
+  .historia__stats { grid-template-columns: repeat(3, 1fr); }
+}

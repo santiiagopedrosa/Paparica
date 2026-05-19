@@ -1,0 +1,138 @@
+.criticas {
+  padding: 7rem 0;
+  background: var(--black-soft);
+}
+
+.criticas__header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.criticas__header .eyebrow {
+  justify-content: center;
+}
+.criticas__header .eyebrow::after {
+  content: '';
+  width: 28px;
+  height: 1px;
+  background: var(--leaf-bright);
+}
+
+.criticas__title {
+  margin-top: 1rem;
+}
+
+.criticas__rating {
+  color: var(--gold);
+  font-style: normal;
+}
+
+.criticas__sub {
+  font-family: var(--font-display);
+  font-style: italic;
+  margin-top: 1rem;
+  color: rgba(220, 220, 212, 0.6);
+  font-size: 1.1rem;
+}
+
+.criticas__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.criticas__card {
+  background: var(--paper);
+  color: var(--black);
+  padding: 2rem 1.8rem;
+  border-radius: 4px;
+  position: relative;
+  box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.4);
+  transition: transform 0.4s ease;
+}
+
+.criticas__card:hover {
+  transform: translateY(-6px);
+}
+
+.criticas__card--tilt-0 { transform: rotate(-1.5deg); }
+.criticas__card--tilt-1 { transform: rotate(1deg); }
+.criticas__card--tilt-2 { transform: rotate(-2deg); }
+
+.criticas__card--tilt-0:hover,
+.criticas__card--tilt-1:hover,
+.criticas__card--tilt-2:hover {
+  transform: translateY(-6px) rotate(0);
+}
+
+.criticas__card::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-3deg);
+  width: 80px;
+  height: 22px;
+  background: rgba(59, 122, 47, 0.65);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.criticas__stars {
+  display: flex;
+  gap: 0.2rem;
+  margin-bottom: 1rem;
+  margin-top: 0.4rem;
+}
+
+.criticas__text {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1.05rem;
+  line-height: 1.55;
+  color: #333;
+  margin-bottom: 1.2rem;
+}
+
+.criticas__divider {
+  border: 0;
+  border-top: 1.5px dashed rgba(0, 0, 0, 0.18);
+  margin-bottom: 0.8rem;
+}
+
+.criticas__author {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 0.8rem;
+}
+
+.criticas__author-name {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 1rem;
+  letter-spacing: -0.005em;
+}
+
+.criticas__author-info {
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #666;
+  margin-top: 0.2rem;
+}
+
+.criticas__time {
+  font-family: var(--font-script);
+  font-size: 1.1rem;
+  color: var(--leaf-deep);
+}
+
+.criticas__cta {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+@media (min-width: 768px) {
+  .criticas__grid { grid-template-columns: repeat(3, 1fr); gap: 2rem; }
+}
